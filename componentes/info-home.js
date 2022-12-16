@@ -1,6 +1,6 @@
 import { LitElement, html, css } from 'lit';
-
-export class InfoHome extends LitElement {
+import { navigator } from 'lit-element-router';
+export class InfoHome extends navigator(LitElement) {
     static styles = [
         css`
             :host {
@@ -11,7 +11,13 @@ export class InfoHome extends LitElement {
 
     render() {
         return html`
-        <h1>hola</h1>`;
+        <h1 @click="${()=>{
+            return this.onNavigate("/aboutUs");
+        }}">click aqui para About us</h1>
+        `
+    }
+    onNavigate(path){
+     this.navigate(path)
     }
 }
 customElements.define('info-home', InfoHome);

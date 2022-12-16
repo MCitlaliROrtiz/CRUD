@@ -11,7 +11,7 @@ export class AboutUs extends LitElement {
 
     render() {
         return html`
-        <p>holiii</p>`;
+        <p>lorem ipsum</p>`;
     }
 }
 customElements.define('about-us', AboutUs);

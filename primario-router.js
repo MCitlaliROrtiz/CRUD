@@ -36,10 +36,10 @@ constructor() {
   }
     render() {
         return html`
-        <componete-principal-outlet active-route=${this.route}>
+        <principal-outlet active-route=${this.route}>
         <info-home route="home"></info-home>
         <about-us route="aboutUs"></about-us>
-        </componete-principal-outlet>`;
+        </principal-outlet>`;
     }
 }
 customElements.define('primario-router',PrimarioRouter);
