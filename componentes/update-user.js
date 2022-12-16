@@ -1,6 +1,6 @@
 import { LitElement, html, css } from 'lit';
 
-export class AboutUs extends LitElement {
+export class UpdateUser extends LitElement {
     static styles = [
         css`
             :host {
@@ -11,7 +11,7 @@ export class AboutUs extends LitElement {
 
     render() {
         return html`
-        <p>lorem ipsum</p>`;
+        <p>update</p>`;
     }
 }
-customElements.define('about-us', AboutUs);
+customElements.define('update-user', UpdateUser);
